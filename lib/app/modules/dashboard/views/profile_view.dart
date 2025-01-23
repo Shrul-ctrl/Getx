@@ -59,7 +59,7 @@ class ProfileView extends GetView<ProfileController> {
                       padding: const EdgeInsets.only(top: 16.0),
                       child: CircleAvatar(
                         backgroundImage: NetworkImage(data.avatar!),
-                        radius: 60,
+                        radius: 40,
                       ),
                     ),
                   const SizedBox(height: 16),
@@ -70,7 +70,83 @@ class ProfileView extends GetView<ProfileController> {
                   ),
                   const SizedBox(height: 8),
                   Text(" ${data.email}"),
-                  
+                  const SizedBox(height: 16),
+                  Container(
+                    padding: EdgeInsets.all(1.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: <Widget>[
+                        Container(
+                          padding: EdgeInsets.all(0),
+                          margin: EdgeInsets.all(0),
+                          height: 80.0,
+                          width: 80.0,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: NetworkImage(
+                                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrrSeED_hGhTydZeXpT2AS7VAtSjG-bUWFkw&s'),
+                              fit: BoxFit.cover,
+                            ),
+                            borderRadius: BorderRadius.circular(8.0),
+                          ),
+                        ),
+                        Container(
+                          padding: EdgeInsets.all(0),
+                          margin: EdgeInsets.all(0),
+                          height: 80.0,
+                          width: 80.0,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: NetworkImage(
+                                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrrSeED_hGhTydZeXpT2AS7VAtSjG-bUWFkw&s'),
+                              fit: BoxFit.cover,
+                            ),
+                            borderRadius: BorderRadius.circular(8.0),
+                          ),
+                        ),
+                        Container(
+                          padding: EdgeInsets.all(0),
+                          margin: EdgeInsets.all(0),
+                          height: 80.0,
+                          width: 80.0,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: NetworkImage(
+                                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrrSeED_hGhTydZeXpT2AS7VAtSjG-bUWFkw&s'),
+                              fit: BoxFit.cover,
+                            ),
+                            borderRadius: BorderRadius.circular(8.0),
+                          ),
+                        ),
+                        Container(
+                          padding: EdgeInsets.all(0),
+                          margin: EdgeInsets.all(0),
+                          height: 80.0,
+                          width: 80.0,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: NetworkImage(
+                                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrrSeED_hGhTydZeXpT2AS7VAtSjG-bUWFkw&s'),
+                              fit: BoxFit.cover,
+                            ),
+                            borderRadius: BorderRadius.circular(8.0),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(height: 20),
+                  Padding(
+                    padding: const EdgeInsets.all(
+                        16.0), // Menambahkan padding di semua sisi
+                    child: Text(
+                      "Halo.. Nama saya Faiz Nashrul Haq. Saya adalah seorang pengembang backend & mobile yang tinggal di dekat Bandung. Coding telah menjadi perpaduan sempurna dari dua minat favorit saya, dan saya senang melihat hasil dari upaya saya yang membantu pengalaman pengguna. Saya menemukan solusi unik untuk masalah kompleks dan melakukannya sambil membuat permainan kata terburuk yang mungkin belum pernah Anda dengar sebelumnya.",
+                      style: const TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  )
                 ],
               );
             },
